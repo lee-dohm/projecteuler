@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby -w
+
+require 'benchmark'
+
+script = ARGV.first
+
+puts Benchmark.measure { system "ruby #{script}" }
